@@ -26,7 +26,7 @@ dmall-port项目，正如海贼王中的All Blue，是我们追寻的梦想之�
 | Python     | 已实现   | 100%    |  pybind11的优雅让整个系统非常完美 堪称典范             |
 | Lua        | 已实现   | 100%    |  sol2的优雅让整个系统非常完美 堪称典范              |
 | JavaScript | 已实现   | 100%    |     genepi API有点粗糙 没有找到更好的替代品          |
-| JavaScript | 已实现   | 50%    |     使用emsdk实现，目前看好像还行          |
+| JavaScript | 已实现   | 100%    |     使用emsdk实现，目前看好像还行          |
 | Go         | 未实现   | 20%    | 仅完成demo |
 | C#         | 已实现   | 50%    | 完成demo, 流程跑通, 代码生成器还未实现 |
 
