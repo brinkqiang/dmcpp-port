@@ -1,6 +1,8 @@
 # 🚀 dmcpp-port 项目
 
-![dmcpp-port](images/dmcpp-port.jpg)
+![dmcpp-port](images/dmcpp-port.jpg).
+
+**简体中文** · [English](./README.md) 
 
 ---
 
