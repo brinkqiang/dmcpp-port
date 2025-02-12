@@ -1,91 +1,93 @@
-# 🚀 dmcpp-port 项目
+# 🚀 dmcpp-port Project
 
 ![dmcpp-port](images/dmcpp-port.jpg)
 
----
-
-## 项目前言
-
-在 C++ 与其他语言的互操作领域，开发者经常面临复杂的工具链和繁琐的配置流程。**dmcpp-port** 项目正是为了解决这些问题而诞生的，目标是为 C++ 开发者提供一个简洁、高效且统一的语言互操作解决方案。
+**English** · [简体中文](./README.zh-CN.md) 
 
 ---
 
-## 项目介绍
+## Project Preface
 
-在编程世界中，C++ 如同一条伟大的航路，强大而充满挑战，而其他编程语言则如同分散的四个大陆，各具特色却难以互通。**dmcpp-port** 项目，正如《海贼王》中的 **All Blue**，致力于打破语言的壁垒，架起一座桥梁，让开发者能够自由穿梭于不同的编程世界。
-
-就像路飞寻找 **One Piece**，我们相信：
-- 🐍 **Python** 的优雅如同东海，温柔而生机勃勃
-- 🌿 **Lua** 的轻巧如同南海，灵活且充满可能性
-- 🌐 **JavaScript** 的活力如同西海，无处不在
-- ⚡ **Go** 的高效如同北海，冷峻且强大
-- 🛡 **C#** 的全面如同红土大陆，坚实可靠
-
-让我们共同开启这段伟大的航程，创造属于所有开发者的 **All Blue**！
+In the field of interoperability between C++ and other languages, developers often face complex toolchains and tedious configuration processes. The **dmcpp-port** project was born to solve these problems, aiming to provide C++ developers with a simple, efficient and unified language interoperability solution.
 
 ---
 
-## 移植状态
+## Project Introduction
 
-| 语言            | 状态   | 进度  | 备注                                   |
-|-----------------|--------|-------|----------------------------------------|
-| 🐍 Python      | 已实现 | 100%  | 使用 **pybind11** 完美实现，堪称典范      |
-| 🌿 Lua         | 已实现 | 100%  | 使用 **sol2** 完美实现，堪称典范         |
-| 🌐 JavaScript  | 已实现 | 100%  | 使用 **genepi API**，略显粗糙但可行      |
-| 🌐 JavaScript  | 已实现 | 100%  | 使用 **emsdk** 实现，效果尚可           |
-| ⚡ Go          | 未实现 | 20%   | 目前仅完成 demo                        |
-| 🛡 C#          | 已实现 | 50%   | 完成 demo，代码生成器尚未实现            |
+In the programming world, C++ is like a great route, powerful and full of challenges, while other programming languages are like four separate continents, each with its own characteristics but difficult to communicate with each other. The **dmcpp-port** project, like the **All Blue** in "One Piece", is committed to breaking down language barriers and building a bridge that allows developers to freely travel between different programming worlds.
+
+Just like Luffy looking for **One Piece**, we believe:
+- 🐍 **Python**'s elegance is like the East Sea, gentle and vibrant
+- 🌿 **Lua**'s lightness is like the South Sea, flexible and full of possibilities
+- 🌐 **JavaScript**'s vitality is like the West Sea, ubiquitous
+- ⚡ **Go**'s efficiency is like the North Sea, cold and powerful
+- 🛡 **C#**'s comprehensiveness is like the Red Line, solid and reliable
+
+Let us embark on this great voyage together and create the **All Blue** for all developers!
 
 ---
 
-## 移植计划
+## Porting Status
+
+| Language         | Status   | Progress | Remarks                                |
+|------------------|----------|----------|----------------------------------------|
+| 🐍 Python       | Implemented | 100%  | Perfect implementation using **pybind11**, a model example      |
+| 🌿 Lua          | Implemented | 100%  | Perfect implementation using **sol2**, a model example         |
+| 🌐 JavaScript   | Implemented | 100%  | Using **genepi API**, slightly rough but feasible      |
+| 🌐 JavaScript   | Implemented | 100%  | Implemented using **emsdk**, acceptable effect           |
+| ⚡ Go           | Not Implemented | 20%   | Only demo completed so far                        |
+| 🛡 C#           | Implemented | 50%   | Demo completed, code generator not yet implemented            |
+
+---
+
+## Porting Plan
 
 ### 🐍 Python
-- **技术**：使用 **pybind11** 完成自动化绑定
-- **项目名称**：`dmgen4pybind`
+- **Technology**: Use **pybind11** to complete automatic binding
+- **Project Name**: `dmgen4pybind`
 
 ### 🌿 Lua
-- **技术**：使用 **sol2** 完成自动化绑定
-- **项目名称**：`dmgen4sol`
+- **Technology**: Use **sol2** to complete automatic binding
+- **Project Name**: `dmgen4sol`
 
 ### 🌐 JavaScript
-- **技术**：使用 **genepi** 完成自动化绑定
-- **项目名称**：`dmgen4node`
+- **Technology**: Use **genepi** to complete automatic binding
+- **Project Name**: `dmgen4node`
 
 ### 🌐 JavaScript (WASM)
-- **技术**：使用 **emsdk** 完成自动化绑定
-- **项目名称**：`dmgen4wasm`
+- **Technology**: Use **emsdk** to complete automatic binding
+- **Project Name**: `dmgen4wasm`
 
 ### ⚡ Go
-- **技术**：使用 **swig** 完成自动化绑定
-- **项目名称**：`dmgodemo`
+- **Technology**: Use **swig** to complete automatic binding
+- **Project Name**: `dmgodemo`
 
 ### 🛡 C#
-- **技术**：使用 **CppCsharp** 完成绑定
-- **项目名称**：`dmcsharp-dmprojectinfo`
+- **Technology**: Use **CppCsharp** to complete binding
+- **Project Name**: `dmcsharp-dmprojectinfo`
 
 ---
 
-## 开发指南
+## Development Guide
 
-1. 每个语言的移植将创建独立分支。
-2. 移植完成后将合并到主分支。
-3. 每个语言的移植需要包含单元测试。 ✅
-4. 保证 API 接口的一致性。 ✅
-
----
-
-## 贡献指南
-
-欢迎贡献代码并提交 Pull Request，请遵循以下规范：
-- 每个语言的移植创建独立目录。
-- 保持代码风格的一致性。
-- 提供完整的文档和测试用例。 📚
+1. Each language port will create an independent branch.
+2. After the port is completed, it will be merged into the main branch.
+3. Each language port needs to include unit tests. ✅
+4. Ensure API interface consistency. ✅
 
 ---
 
-## 总结
+## Contribution Guide
 
-**pybind11** 和 **sol2** 的实现堪称完美，比其他语言的解决方案更为优雅。尽管目前还有一些语言的移植工作在进行中，但我们相信这个项目将大大简化跨语言开发的复杂性，并为开发者带来更高效的工作方式。让我们一起迈向更加活跃、健康和充满创意的未来吧！ 🌟🚀
+Welcome to contribute code and submit Pull Requests, please follow the following specifications:
+- Create an independent directory for each language port.
+- Maintain code style consistency.
+- Provide complete documentation and test cases. 📚
+
+---
+
+## Summary
+
+The implementation of **pybind11** and **sol2** is perfect, more elegant than solutions for other languages. Although there are still some language porting work in progress, we believe this project will greatly simplify the complexity of cross-language development and bring developers a more efficient way of working. Let us move towards a more active, healthy and creative future together! 🌟🚀
 
 ---
