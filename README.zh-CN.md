@@ -92,7 +92,4 @@
 
 ---
 
-## 语言
-
-[English](README.en.md)
 ---
